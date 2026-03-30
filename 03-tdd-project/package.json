@@ -1,7 +1,7 @@
 {
-  "name": "ecommerce-calc-lab",
+  "name": "boletim-escolar-tdd",
   "version": "1.0.0",
-  "description": "Motor de Cálculos - TechStore E-commerce",
+  "description": "TDD Lab — Sistema de Boletim Escolar",
   "type": "module",
   "scripts": {
     "test": "vitest",
