@@ -252,7 +252,8 @@ Agora é a vez de vocês. Apliquem os mesmos conceitos em um novo contexto.
 
 O `NotificationService` do projeto:
 
-- valida o usuário antes de enviar a notificação
+- valida os dados do usuário antes de enviar a notificação
+- monta a mensagem com `formatMessage()`
 - chama um `emailService` externo assíncrono
 - registra cada etapa no `logger`
 - retorna um objeto com `success` e `message`
@@ -281,6 +282,7 @@ O código já está implementado em `src/`. Sua missão é escrever os testes em
 **Usando `beforeEach`:**
 
 - Recriar o `NotificationService` com dependências mockadas antes de cada teste
+- Garantir isolamento entre os cenários de `notify()` e `notifyMany()`
 
 **Usando `vi.fn()` (mock):**
 
@@ -290,6 +292,12 @@ O código já está implementado em `src/`. Sua missão é escrever os testes em
 **Usando `vi.spyOn()` (spy):**
 
 - Verificar se `logger.log` foi chamado durante o processamento
+
+**Casos principais:**
+
+- validar `formatMessage()`
+- validar `notify()` com sucesso e erro
+- validar `notifyMany()` com lista válida e lista vazia
 
 **Testes assíncronos:**
 

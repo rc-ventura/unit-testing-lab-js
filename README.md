@@ -12,6 +12,7 @@ Repositório de laboratórios práticos de testes unitários com **Vitest**, cob
 | 2 | `02-calc-project` | TDD — Calculadora TechStore | [📖 Ver aula](./02-calc-project/README.md) |
 | 3 | `03-tdd-project` | TDD — Sistema de Boletim Escolar | [📖 Ver aula](./03-tdd-project/README.md) |
 | 4 | `04-advanced-project` | Hooks, Mocks, Spies e Async | [📖 Ver aula](./04-advanced-project/README.md) |
+| 5 | `05-order-service-project` | Atividade: Sistema de Pedidos | [📖 Ver aula](./05-order-service-project/README.md) |
 
 Cada pasta contém **um projeto independente** com seu próprio `package.json` e instruções completas.
 
@@ -21,7 +22,7 @@ Cada pasta contém **um projeto independente** com seu próprio `package.json` e
 
 ```bash
 # Entre na pasta do projeto desejado
-cd 01-unit-test-basic   # ou 02, 03, 04
+cd 01-unit-test-basic   # ou 02, 03, 04, 05
 
 # Instale as dependências
 npm install
@@ -39,6 +40,7 @@ npx vitest
 02 — TDD básico        →  implementar código guiado por testes (calculadora)
 03 — TDD intermediário →  TDD com duas camadas de módulos (boletim escolar)
 04 — Avançado          →  hooks, mocks, spies, testes assíncronos
+05 — Atividade         →  aplicar os conceitos do 04 em um novo contexto (pedidos)
 ```
 
 ---
